@@ -39,6 +39,7 @@ cfg_if::cfg_if! {
         target_os = "linux",
         target_os = "macos",
         target_os = "openbsd",
+        target_os = "serenity",
         target_os = "solaris",
         target_os = "illumos",
     ))] {
@@ -178,6 +179,7 @@ cfg_if::cfg_if! {
             target_os = "fuchsia",
             target_os = "freebsd",
             target_os = "openbsd",
+            target_os = "serenity",
             all(target_os = "android", feature = "dl_iterate_phdr"),
         ),
         not(target_env = "uclibc"),
